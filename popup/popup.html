@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FreeCopy</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+<main class="popup-shell" aria-labelledby="brandTitle">
+  <section class="brand-panel">
+    <div class="brand-mark">
+      <img src="../icons/freecopy-icon48.png" alt="" class="logo" />
+    </div>
+    <div class="brand-copy">
+      <p class="brand-name">FreeCopy</p>
+      <h1 id="brandTitle">Copy freely.</h1>
+    </div>
+  </section>
+
+  <section class="control-panel">
+    <div class="site-copy">
+      <p class="section-label">Current site</p>
+      <p class="site-name" id="siteLabel">Checking tab</p>
+    </div>
+    <label class="switch" aria-label="Toggle FreeCopy for this site">
+      <input type="checkbox" id="masterToggle" disabled />
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section class="control-panel sub-control">
+    <div class="site-copy">
+      <p class="section-label">Clean copy</p>
+      <p class="site-name">Strips boilerplate on copy</p>
+    </div>
+    <label class="switch switch-sm" aria-label="Toggle Clean Copy">
+      <input type="checkbox" id="cleanToggle" disabled />
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section class="control-panel sub-control">
+    <div class="site-copy">
+      <p class="section-label">Plain text mode</p>
+      <p class="site-name">Always copy as unformatted text</p>
+    </div>
+    <label class="switch switch-sm" aria-label="Toggle Plain Text mode">
+      <input type="checkbox" id="plainToggle" disabled />
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <div class="brand-strip" aria-label="FreeCopy status">
+    <span>Selection</span>
+    <span>Right-click copy</span>
+    <span>Site control</span>
+  </div>
+
+  <p class="status-line" id="statusLine">FreeCopy is ready.</p>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>
